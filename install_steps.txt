@@ -1,12 +1,12 @@
 Please follow the below steps for lab exercises:
 ###### First step - Build docker image by executing below command #####
-sudo docker build . -t your_docker_user_id/myphythonapp
+sudo docker build . -t rgrmsci89/myphythonapp
 (note - change the above your_docker_user_id to userid you had created in cloud.docker.com)
 sudo docker images
 the above command to see the image you had created
 sudo docker login
 enter your docker hub crendetials
-sudo docker push your_docker_user_id/myphythonapp
+sudo docker push rgrmsci89/myphythonapp
 (note - change the above your_docker_user_id to userid you had created in cloud.docker.com)
 
 How to run application?
@@ -15,7 +15,7 @@ sudo docker run -p 8081:5000 --rm --name myfirstApp1 your_docker_user_id/myphyth
 now go to browser enter the public dns name with port no 8081.  
 
 ### if you would like to run on differet port 
-sudo docker run -p 8091:5000 --rm --name myfirstApp2 your_docker_user_id/myphythonapp
+sudo docker run -p 8091:5000 --rm --name myfirstApp2 rgrmsci89/myphythonapp
 Make sure you open port 8091 in security firewall rules.
 
 
@@ -51,4 +51,4 @@ sudo docker rm  6a3884611cc6
 sudo docker run --name static-site -e AUTHOR="Your Name" -d -P dockersamples/static-site
 sudo docker port static-site
 sudo curl http://localhost:32768
-sudo docker run --name static-site-2 -e AUTHOR="Ananth Kannan" -d -p 8080:80 dockersamples/static-site
+sudo docker run --name static-site-2 -e AUTHOR="rgujjar" -d -p 8080:80 dockersamples/static-site
