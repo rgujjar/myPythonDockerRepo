@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myphythonapp
-        image: myacrrepo36.azurecr.io/rgrmsci89/myphythonapp:#{Build.BuildId}#
+        image: myacrrepo36.azurecr.io/rgujjar/myphythonapp:#{Build.BuildId}#
         ports:
         - containerPort: 5000
 # service type loadbalancer       
